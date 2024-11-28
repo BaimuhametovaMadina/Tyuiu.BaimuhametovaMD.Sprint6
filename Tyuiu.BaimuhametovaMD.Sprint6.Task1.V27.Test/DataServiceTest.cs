@@ -1,3 +1,5 @@
+using Tyuiu.BaimuhametovaMD.Sprint6.Task1.V27.Lib;
+
 namespace Tyuiu.BaimuhametovaMD.Sprint6.Task1.V27.Test
 {
     [TestClass]
@@ -6,7 +8,8 @@ namespace Tyuiu.BaimuhametovaMD.Sprint6.Task1.V27.Test
         [TestMethod]
         public void TestMethod1()
         {
-
+            DataService ds = new DataService();
+            double[] res = ds.GetMassFunction(-5, 5);
         }
     }
 }
