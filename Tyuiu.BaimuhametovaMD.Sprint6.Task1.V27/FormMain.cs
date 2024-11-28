@@ -51,12 +51,14 @@ namespace Tyuiu.BaimuhametovaMD.Sprint6.Task1.V27
             DataService ds = new DataService();
             double[] res = ds.GetMassFunction(start, stop);
             string line;
+                textBox_Result.Text = "";
             textBox_Result.AppendText("+----------+----------+" + Environment.NewLine);
             textBox_Result.AppendText("+     x    +    f(x)  +" + Environment.NewLine);
             textBox_Result.AppendText("+----------+----------+" + Environment.NewLine);
             for (int i = 0; i < res.Length; i++)
             {
-                line = String.Format("|{0,17:d}|{1,17:f}|", i - 5, res[i]);
+                    Console.WriteLine(res[i]);
+                line = String.Format("|{0,5:d}   |{1, 5:f2}   |", i - 5, res[i]);
                 textBox_Result.AppendText(line + Environment.NewLine);
             }
             textBox_Result.AppendText("+----------+----------+" + Environment.NewLine);

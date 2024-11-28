@@ -10,6 +10,8 @@ namespace Tyuiu.BaimuhametovaMD.Sprint6.Task1.V27.Test
         {
             DataService ds = new DataService();
             double[] res = ds.GetMassFunction(-5, 5);
+            Console.WriteLine(res[1]);
+            Assert.AreEqual(11.87, res[1]);
         }
     }
 }
