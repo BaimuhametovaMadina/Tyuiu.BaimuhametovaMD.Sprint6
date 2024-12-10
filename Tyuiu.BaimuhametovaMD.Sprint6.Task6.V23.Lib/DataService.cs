@@ -12,7 +12,7 @@ namespace Tyuiu.BaimuhametovaMD.Sprint6.Task6.V23.Lib
             {
                 if (str[i].Contains('s')) res += str[i] + " ";
             }
-            return res;
+            return res.Trim();
         }
     }
 }
